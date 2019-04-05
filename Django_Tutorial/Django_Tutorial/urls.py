@@ -14,5 +14,7 @@ urlpatterns = [
     
     url(r'^$', HelloDjangoApp.views.index, name='index'),
     url(r'^home$', HelloDjangoApp.views.home, name='home'),
+    url(r'^time$', HelloDjangoApp.views.time, name='time'),
+    url(r'^time_template$', HelloDjangoApp.views.time_template, name='time_template'),
 
     ]
