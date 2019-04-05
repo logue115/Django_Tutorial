@@ -11,17 +11,8 @@ import HelloDjangoApp.views
 # admin.autodiscover()
 
 urlpatterns = [
-
-    # Examples:
-    # url(r'^$', Django_Tutorial.views.home, name='home'),
-    # url(r'^Django_Tutorial/', include('Django_Tutorial.Django_Tutorial.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
-
+    
     url(r'^$', HelloDjangoApp.views.index, name='index'),
-    url(r'^home$', HelloDjangoApp.views.index, name='home'),
-]
+    url(r'^home$', HelloDjangoApp.views.home, name='home'),
+
+    ]
