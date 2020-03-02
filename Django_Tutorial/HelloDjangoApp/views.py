@@ -25,5 +25,14 @@ def about(request):
             'content' : "Example app page for Django."
             }
         )
+def algorithms(request):
+    return render(
+        request,
+        "HelloDjangoApp/algorithms.html",
+        {
+            'title' : "algorithms",
+            
+            }
+        )
    
 # Create your views here.

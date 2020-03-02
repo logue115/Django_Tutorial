@@ -46,6 +46,7 @@
   <ItemGroup>
     <Content Include="HelloDjangoApp\Static\site.css" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\about.html" />
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\algorithms.html" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\layout.html" />
     <Content Include="requirements.txt" />
