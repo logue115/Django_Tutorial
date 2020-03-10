@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
-
+##import random
 
 def index(request):
     now=datetime.now()
@@ -34,5 +34,31 @@ def algorithms(request):
             
             }
         )
+
+def upload(request):
+    #if request.method == 'POST'
+   #uploaded_file = request.FILES['document']
+        #print(uploaded_file.name)
+        #print(uploaded_file.size)
+    return render(
+        request,
+        "HelloDjangoApp/upload.html",
+        {
+            'title' : "Upload",
+            'content' : "Upload testing page."
+            }
+        )
    
 # Create your views here.
+"""
+
+array1=[]
+def Array_Gen():
+    start=9
+    stop=99
+    limit=10
+    array1=[random.randint(start, stop) for iter in range(limit)]
+    print(array1)
+        
+Array_Gen()
+"""

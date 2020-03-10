@@ -50,6 +50,7 @@
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\algorithms.html" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\layout.html" />
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\upload.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
