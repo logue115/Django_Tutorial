@@ -36,10 +36,10 @@ def algorithms(request):
         )
 
 def upload(request):
-    #if request.method == 'POST'
-   #uploaded_file = request.FILES['document']
-        #print(uploaded_file.name)
-        #print(uploaded_file.size)
+    if request.method == 'POST':
+        uploaded_file = request.FILES['document']
+        print(uploaded_file.name)
+        print(uploaded_file.size)
     return render(
         request,
         "HelloDjangoApp/upload.html",
