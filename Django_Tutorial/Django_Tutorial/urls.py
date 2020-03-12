@@ -20,3 +20,4 @@ urlpatterns = [
     url(r'^upload$', views.upload, name='upload'),
     
     ]
+

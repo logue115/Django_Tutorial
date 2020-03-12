@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
+from django.core.files.storage import FileSystemStorage
 ##import random
 
 def index(request):
@@ -38,15 +39,17 @@ def algorithms(request):
 def upload(request):
     if request.method == 'POST':
         uploaded_file = request.FILES['document']
-        print(uploaded_file.name)
-        print(uploaded_file.size)
+        fs=FileSystemStorage()
+        fs.save(uploaded_file.name, uploaded_file)
+        #print(uploaded_file.name)
+        #print(uploaded_file.size)
     return render(
         request,
-        "HelloDjangoApp/upload.html",
-        {
-            'title' : "Upload",
-            'content' : "Upload testing page."
-            }
+        "HelloDjangoApp/upload.html"
+        #{
+         #   'title' : "Upload",
+          #  'content' : "Upload testing page."
+           # }
         )
    
 # Create your views here.
